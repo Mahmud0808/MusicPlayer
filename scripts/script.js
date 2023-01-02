@@ -13,72 +13,72 @@ new Vue({
         {
           name: "Mekanın Sahibi",
           artist: "Norm Ender",
-          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/img/cover-1.jpg",
-          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/mp3/music-1.mp3",
+          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/img/cover-1.jpg",
+          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/mp3/music-1.mp3",
           url: "https://www.youtube.com/watch?v=z3wAjJXbYzA",
           favorited: false
         },
         {
           name: "Everybody Knows",
           artist: "Leonard Cohen",
-          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/img/cover-2.jpg",
-          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/mp3/music-2.mp3",
+          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/img/cover-2.jpg",
+          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/mp3/music-2.mp3",
           url: "https://www.youtube.com/watch?v=Lin-a2lTelg",
           favorited: false
         },
         {
           name: "Extreme Ways",
           artist: "Moby",
-          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/img/cover-3.jpg",
-          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/mp3/music-3.mp3",
+          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/img/cover-3.jpg",
+          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/mp3/music-3.mp3",
           url: "https://www.youtube.com/watch?v=ICjyAe9S54c",
           favorited: false
         },
         {
           name: "Butterflies",
           artist: "Sia",
-          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/img/cover-4.jpg",
-          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/mp3/music-4.mp3",
+          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/img/cover-4.jpg",
+          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/mp3/music-4.mp3",
           url: "https://www.youtube.com/watch?v=kYgGwWYOd9Y",
           favorited: false
         },
         {
           name: "The Final Victory",
           artist: "Haggard",
-          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/img/cover-5.jpg",
-          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/mp3/music-5.mp3",
+          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/img/cover-5.jpg",
+          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/mp3/music-5.mp3",
           url: "https://www.youtube.com/watch?v=0WlpALnQdN8",
           favorited: false
         },
         {
           name: "Genius ft. Sia, Diplo, Labrinth",
           artist: "LSD",
-          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/img/cover-6.jpg",
-          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/mp3/music-6.mp3",
+          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/img/cover-6.jpg",
+          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/mp3/music-6.mp3",
           url: "https://www.youtube.com/watch?v=HhoATZ1Imtw",
           favorited: false
         },
         {
           name: "The Comeback Kid",
           artist: "Lindi Ortega",
-          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/img/cover-7.jpg",
-          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/mp3/music-7.mp3",
+          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/img/cover-7.jpg",
+          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/mp3/music-7.mp3",
           url: "https://www.youtube.com/watch?v=me6aoX0wCV8",
           favorited: false
         },
         {
           name: "Overdose",
           artist: "Grandson",
-          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/img/cover-8.jpg",
-          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/mp3/music-8.mp3",
+          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/img/cover-8.jpg",
+          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/mp3/music-8.mp3",
           url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
           favorited: false
         },
         {
           name: "Rag'n'Bone Man",
           artist: "Human",
-          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/img/cover-9.jpg",
-          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/tree/main/mp3/music-9.mp3",
+          cover: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/img/cover-9.jpg",
+          source: "https://raw.githubusercontent.com/Mahmud0808/MusicPlayer/main/mp3/music-9.mp3",
           url: "https://www.youtube.com/watch?v=L3wKzyIN1yk",
           favorited: false
         }
