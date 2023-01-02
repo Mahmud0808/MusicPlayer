@@ -5,6 +5,7 @@ new Vue({
       audio: null,
       circleLeft: null,
       barWidth: null,
+      thumbPos: null,
       duration: null,
       currentTime: null,
       isTimerPlaying: false,
@@ -100,9 +101,10 @@ new Vue({
     generateTime() {
       let width = (100 / this.audio.duration) * this.audio.currentTime;
       this.barWidth = width + "%";
+      this.thumbPos = (width - 1) + "%";
       this.circleLeft = width + "%";
-      let durmin = Math.floor(this.audio.duration / 60);
-      let dursec = Math.floor(this.audio.duration - durmin * 60);
+      let durmin = Math.floor(this.audio.duration / 60) || 0;
+      let dursec = Math.floor(this.audio.duration - durmin * 60) || 0;
       let curmin = Math.floor(this.audio.currentTime / 60);
       let cursec = Math.floor(this.audio.currentTime - curmin * 60);
       if (durmin < 10) {
@@ -132,13 +134,15 @@ new Vue({
         percentage = 0;
       }
       this.barWidth = percentage + "%";
+      this.thumbPos = (percentage - 1) + "%";
       this.circleLeft = percentage + "%";
       this.audio.currentTime = (maxduration * percentage) / 100;
-      this.audio.play();
+      if (this.isTimerPlaying)
+        this.audio.play();
     },
     clickProgress(e) {
-      this.isTimerPlaying = true;
-      this.audio.pause();
+      if (this.isTimerPlaying)
+        this.audio.pause();
       this.updateBar(e.pageX);
     },
     prevTrack() {
@@ -165,11 +169,12 @@ new Vue({
     },
     resetPlayer() {
       this.barWidth = 0;
+      this.thumbPos = this.barWidth;
       this.circleLeft = 0;
       this.audio.currentTime = 0;
       this.audio.src = this.currentTrack.source;
       setTimeout(() => {
-        if(this.isTimerPlaying) {
+        if (this.isTimerPlaying) {
           this.audio.play();
         } else {
           this.audio.pause();
@@ -187,13 +192,13 @@ new Vue({
     this.currentTrack = this.tracks[0];
     this.audio = new Audio();
     this.audio.src = this.currentTrack.source;
-    this.audio.ontimeupdate = function() {
+    this.audio.ontimeupdate = function () {
       vm.generateTime();
     };
-    this.audio.onloadedmetadata = function() {
+    this.audio.onloadedmetadata = function () {
       vm.generateTime();
     };
-    this.audio.onended = function() {
+    this.audio.onended = function () {
       vm.nextTrack();
       this.isTimerPlaying = true;
     };
