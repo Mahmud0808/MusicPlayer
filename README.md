@@ -1,6 +1,7 @@
 <div align="center">
-  <h2 align="center">Web Music Player</h2>
+  <h1 align="center">Web Music Player</h2>
   A fully responsive web music player built using html, css, and javascript.
+
   <a href="https://mahmud0808.github.io/MusicPlayer/"><strong>➥ Live Demo</strong></a>
 </div>
 
