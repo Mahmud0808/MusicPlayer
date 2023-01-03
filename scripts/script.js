@@ -101,7 +101,7 @@ new Vue({
     generateTime() {
       let width = (100 / this.audio.duration) * this.audio.currentTime;
       this.barWidth = width + "%";
-      this.thumbPos = (width - 1) + "%";
+      this.thumbPos = (width == 0 ? width : (width == 100 ? width : width - 1)) + "%";
       this.circleLeft = width + "%";
       let durmin = Math.floor(this.audio.duration / 60) || 0;
       let dursec = Math.floor(this.audio.duration - durmin * 60) || 0;
@@ -134,7 +134,7 @@ new Vue({
         percentage = 0;
       }
       this.barWidth = percentage + "%";
-      this.thumbPos = (percentage - 1) + "%";
+      this.thumbPos = (percentage == 0 ? percentage : (percentage == 100 ? percentage : percentage - 1)) + "%";
       this.circleLeft = percentage + "%";
       this.audio.currentTime = (maxduration * percentage) / 100;
       if (this.isTimerPlaying)
@@ -169,7 +169,7 @@ new Vue({
     },
     resetPlayer() {
       this.barWidth = 0;
-      this.thumbPos = this.barWidth;
+      this.thumbPos = 0;
       this.circleLeft = 0;
       this.audio.currentTime = 0;
       this.audio.src = this.currentTrack.source;
